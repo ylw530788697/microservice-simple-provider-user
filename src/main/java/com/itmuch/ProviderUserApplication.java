@@ -5,10 +5,13 @@ import com.itmuch.entity.User;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
 
 import java.math.BigDecimal;
 import java.util.stream.Stream;
+
+import static javafx.scene.input.KeyCode.L;
 
 /**
  * @author evanYang
@@ -16,6 +19,7 @@ import java.util.stream.Stream;
  * @date 2019/06/16 23:05
  */
 @SpringBootApplication
+@EnableEurekaClient
 public class ProviderUserApplication {
 
     public static void main(String[] args) {
